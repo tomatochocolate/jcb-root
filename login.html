@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<link rel="stylesheet" href="./css/style.css?v=1.01">
+	<script src="./js/jquery.min.js?v=1.01"></script>
+	<script src="./js/script.js?v=1.01"></script>
+</head>
+
+<body>
+	<div class="loginbox safebox show">
+		<div class="logo"><img src="./image/logo.png" alt=""></div>
+		<div class="title">登录机翅膀</div>
+		<ul class="from">
+			<li>
+				<i class="icon"><img src="./image/phone.png" alt=""></i><input type="text"
+					onkeyup="this.value=this.value.replace(/\D/g,'')" class="phone" placeholder="请输入手机号"
+					autocomplete="off">
+			</li>
+			<li>
+				<i class="icon"><img src="./image/password.png" alt=""></i><input type="password" class="password"
+					placeholder="请输入密码" autocomplete="off">
+			</li>
+		</ul>
+		<a href="javascript:;" class="btn">登录</a>
+		<ul class="other">
+			<li><a href="javascript:show('.regbox');">注册账号</a></li>
+			<li><a href="javascript:show('.chagebox');">忘记密码？</a></li>
+		</ul>
+		<div class="info">
+			新用户免费体验<span>30分钟</span> <a href="javascript:show('.regbox');">马上注册></a>
+		</div>
+	</div>
+	<div class="regbox safebox">
+		<div class="logo"><img src="./image/logo.png" alt=""></div>
+		<div class="title">手机号注册</div>
+		<ul class="from">
+			<li>
+				<i class="icon"><img src="./image/phone.png" alt=""></i><input type="text"
+					onkeyup="this.value=this.value.replace(/\D/g,'')" class="phone" placeholder="请输入手机号"
+					autocomplete="off">
+			</li>
+			<li>
+				<i class="icon"><img src="./image/password.png" alt=""></i><input type="password" class="password"
+					placeholder="请输入密码" autocomplete="off">
+			</li>
+			<li>
+				<img src alt class="verifyCodeImg" />&nbsp;&nbsp;&nbsp;=
+				<input type="text" placeholder="输入结果" class="CodeImg" />
+			</li>
+			<li>
+				<i class="icon"><img src="./image/checkcode.png" alt=""></i><input class="checkcode" type="text"
+					placeholder="请输入验证码" autocomplete="off"><button href="javascript:;" class="checkcodebtn">发送验证码</button>
+			</li>
+		</ul>
+		<a href="javascript:;" class="btn">注册</a>
+		<ul class="other">
+			<li><a href="javascript:show('.loginbox');">登录</a></li>
+			<li><a href="javascript:show('.chagebox');">忘记密码？</a></li>
+		</ul>
+		<div class="info">
+			新用户免费体验<span>30分钟</span><a href="javascript:show('.loginbox');">马上登录></a>
+		</div>
+	</div>
+	<div class="chagebox safebox">
+		<div class="logo"><img src="./image/logo.png" alt=""></div>
+		<div class="title">修改密码</div>
+		<ul class="from">
+			<li>
+				<i class="icon"><img src="./image/phone.png" alt=""></i><input type="text"
+					onkeyup="this.value=this.value.replace(/\D/g,'')" class="phone" placeholder="请输入手机号"
+					autocomplete="off">
+			</li>
+			<li>
+				<img src alt class="verifyCodeImg" />&nbsp;&nbsp;&nbsp;=
+				<input type="text" placeholder="输入结果" class="CodeImg" />
+			</li>
+			<li>
+				<i class="icon"><img src="./image/checkcode.png" alt=""></i><input class="checkcode" type="text"
+					placeholder="请输入验证码" autocomplete="off"><button href="javascript:;" class="checkcodebtn" >发送验证码</button>
+			</li>
+			<li>
+				<i class="icon"><img src="./image/password.png" alt=""></i><input type="password" class="password"
+					placeholder="请输入新密码" autocomplete="off">
+			</li>
+		</ul>
+		<a href="javascript:;" class="btn">确定</a>
+		<ul class="other">
+			<li><a href="javascript:show('.regbox');">注册账号</a></li>
+			<li><a href="javascript:show('.loginbox');">登录</a></li>
+		</ul>
+
+	</div>
+</body>
+
+</html>

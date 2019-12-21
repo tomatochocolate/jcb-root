@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+	<meta charset="UTF-8">
+	<title>购买套餐</title>
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<link rel="stylesheet" href="./css/style.css?v=1.01">
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/script.js?v=1.01"></script>
+	<script src="./js/buy.js?v=1.01"></script>
+	<script src="./js/card.js?v=1.01"></script>
+</head>
+
+<body>
+	<div class="product">
+		<ul id="goods">
+			<!-- <li>
+				<div class="main"><div class="card">卡序列号兑换，请<a href="card.html" style="color:blue;text-decoration:underline">点击</a>。</div></div>
+				<div class="info"></div>
+			</li> -->
+	
+			<span>正在加载...</span>
+		</ul>
+		<!-- <ul id="cards" style="height:30px;line-height:30px">
+			卡序列号兑换，请<a href="card.html" style="color:blue;text-decoration:underline">点击</a>。
+		</ul> -->
+		<div class="help" id="con">
+			<ul>
+				<li>
+					<div style="font-size:20px">充值卡兑换：</div>
+					<div style="margin-top:15px">
+						<input id="cardSerial" placeholder="填写充值卡密码" type="text" style="min-width:157px;width:58%;height:28px;padding:2px 5px;border:1px solid #999;letter-spacing:2px;font-size:12px">
+						<span class="card"><a href="#" goodid="104" class="tocard "><i><img src="./image/chongzhi.svg" alt=""></i><span>兑换</span></a></span>
+					</div>
+					<!-- <div style="margin-top:15px"><a href="javascript:;" class="btn" style="padding:5px 10px;font-size:12px">提交充值</a></div> -->
+					<div class="info"></div>
+				</li>
+			</ul>
+		</div>
+		<div class="lxqq">联系客服：QQ1504384694</div>
+	</div>
+
+	<div class="buylist">
+		<div class="buybox">
+			<div class="head">选择支付方式</div><a href="javascript:;" class="close">X</a>
+			<ul>
+				<li><a href="javascript:;" class="alipay"><i><img src="./image/zfb.png" alt=""></i><span>支付宝</span></a>
+				</li>
+				<li><a href="javascript:;" class="wechat"><i><img src="./image/wx.png" alt=""></i><span>微信</span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="payload"
+		style="display: none;width: 100%;height: 100%; top: 0; position: absolute;background: rgba(0,0,0,.5)">
+		<div id="payloadText"
+			style="width:330px; margin:90px auto 0 auto;background: #fff;padding: 20px;position: relative">
+			正在跳转，请耐心等待...
+		</div>
+	</div>
+
+</body>
+
+</html>
+<script type="text/javascript">
+
+
+</script>
